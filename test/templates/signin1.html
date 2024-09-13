@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+<main>
+    <h1 class="sec-title">ログイン</h1>
+    <p class="finmessage">{{finmessage}}</p>
+    <form action="/signin" method="POST">
+        <div id="inputBox1">
+            <input class="form1" type="text" name="email" placeholder="email address">
+            <span id="view2">
+                <!--パスワード入力のフォームと位置を揃えるため疑似的に挿入-->
+                <i class="far fa-eye-slash"></i>
+            </span>
+        </div>
+        
+        <div id="inputBox">
+            <input class="form1" type="password" id="password" name="password" placeholder="Password">
+            <span id="view">
+                <!-- 目のアイコン -->
+                <i class="far fa-eye-slash"></i>
+            </span>
+        </div>
+        <input class="fbutton" type="submit" value="LOGIN">
+    </form>
+</main>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パスワード表示・非表示用のJS-->
+<script src="/static/pass.js"></script>
+
+</body>
+</html>

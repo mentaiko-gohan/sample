@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<main>
+    <form class="form-signin" action="/reg" method="post">
+        <h1 class="sec-title">新規商品登録</h1>
+        <br>
+        <div class="inputform">
+            <input type="text" id="inputEmail" name="name" class="form1" placeholder="商品名" required autofocus />
+        </div>
+        <div class="inputform">
+            <input type="text" id="inputPassword" name="description" class="form1" placeholder="商品説明" required />
+        </div>
+        <button class="fbutton" type="submit">登録</button>
+    </form>
+</main>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パスワード表示・非表示用のJS-->
+<script src="/static/pass2.js"></script>
+
+    
+</body>
+</html>

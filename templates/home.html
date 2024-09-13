@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>About Myself</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="職業訓練の講義を通して学んだことを活かしながら、自身の紹介、及びこれまで制作してきた作品を展示しています。">
+<link rel="stylesheet" href="../static/css/pfstyle.css">
+</head>
+<body>
+
+<header>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="#section1">Home</a></li>
+<li><a href="#section2">Profile</a></li>
+<li><a href="#section3">Gallery</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+</header>
+
+<main>
+
+
+
+<!-- ここからsection1 -->
+<section id="section1" class="section">
+    <div class="titlelogo">
+        <img src="../static/image/title.svg">
+    </div>
+</section>
+
+
+
+<!-- ここからsection2 -->
+<section id="section2" class="section">
+<p class="sec-title">To begin with</p>
+<p>
+    このサイトは、エンジニアとしての知識も経験も0だった私が、
+    職業訓練や自己学習を通して学んだことを活かしながら制作したものです。<br>
+    <br>
+    私は趣味を通じてWebサイトのコーディングに関する技術に興味を持ち、
+    その過程で、Webサイトやアプリの開発などを行う「フロントエンドエンジニア」という職業があることを知りました。<br>
+    「フロントエンドエンジニア」について知るうちに、自分も開発に携わってみたいと感じるようになり、
+    職業訓練や自己学習で学びながら、この職業への転職を目指すようになりました。<br>
+    <br>
+    私の詳しい詳細については右下のリンク先にてご説明します。
+</p>
+<br><br>
+<div class="profile">
+    <p>詳細は以下より</p>
+    <p><a href="/profile">Profile</a></p>
+</div>
+
+
+</section>
+
+
+<!-- ここからsection3 -->
+<section id="section3" class="section">
+
+<div class="sec-title">
+    <p class=>Gallery</p>
+</div>
+
+
+<div class="list-grid-trimming">
+
+<div class="list">
+<a href="../static/image/aburi_engawa2.jpg" data-lightbox="group1" data-title="炙りえんがわ">
+<img src="../static/image/aburi_engawa.png" alt="">
+</a>
+</div>
+
+<div class="list">
+<a href="../static/image/battera2.jpg" data-lightbox="group1" data-title="バッテラ">
+<img src="../static/image/battera.png" alt="">
+</a>
+</div>
+
+<div class="list">
+<a href="../static/image/buri2.jpg" data-lightbox="group1" data-title="ブリ">
+<img src="../static/image/buri.png" alt="">
+</a>
+</div>
+
+<div class="list">
+<a href="../static/image/salmon2.jpg" data-lightbox="group1" data-title="サーモン">
+<img src="../static/image/salmon.png" alt="">
+</a>
+</div>
+
+
+</div>
+
+<div class="limited">
+    <div class="l-title">
+        <h3>Limited content</h3>
+    </div>
+    <div class="l-login">
+        <div class="box1">
+            <p class=>
+                限定コンテンツを閲覧するためには<br>
+                ユーザー認証が必要です。
+            </p>
+        </div>
+        <div class="box2">
+            <form action="/signin" method="POST">
+                <div id="inputBox1">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+                    <input type="text" name="email" placeholder="email address">
+                    <span id="view2">
+                        <!--パスワード入力のフォームと位置を揃えるため疑似的に挿入-->
+                        <i class="far fa-eye-slash"></i>
+                    </span>
+                </div>
+                
+                <div id="inputBox">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <span id="view">
+                        <!-- 目のアイコン -->
+                        <i class="far fa-eye-slash"></i>
+                    </span>
+                </div>
+                <p class="errormessage">{{errormessage}}</p>
+                <input type="submit" value="LOGIN">
+            </form>
+        </div>  
+    </div>
+    <div class="new-user">
+        <p>
+            新規ユーザー登録は<a href="/signup">こちら</a>
+        </p>
+    </div>  
+</div>
+
+
+
+</section>
+
+
+
+</main>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">About myself(funa)</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="/static/main.js"></script>
+
+<!--パスワード表示・非表示用のJS-->
+<script src="/static/password.js"></script>
+
+<script>
+    window.onload = function() {
+      var targetId = "{{ target_id }}";
+      if (targetId) {
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<main>
+    <form class="form-signin" action="/signup" method="post">
+        <h1 class="sec-title">新規ユーザー登録</h1>
+        <br>
+        <div class="inputform">
+            <input class="form1" type="email" id="inputEmail" name="email" placeholder="Email Address" required autofocus />
+            <span id="view2">
+                <!--パスワード入力のフォームと位置を揃えるため疑似的に挿入-->
+                <i class="far fa-eye-slash"></i>
+        </span>
+        </div>
+        <div class="inputform">
+            <input class="form1" type="password" id="inputPassword" name="password" placeholder="Password" required />
+            <span id="view">
+                <!-- 目のアイコン -->
+                <i class="far fa-eye-slash"></i>
+        </span>
+        </div>
+        <p class="errormessage2">{{errormessage2}}</p>
+        <button class="fbutton" type="submit">登録</button>
+    </form>
+</main>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パスワード表示・非表示用のJS-->
+<script src="/static/pass2.js"></script>
+
+    
+</body>
+</html>

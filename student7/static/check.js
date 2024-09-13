@@ -1,0 +1,1 @@
+document.querySelectorAll("td:first-of-type input")

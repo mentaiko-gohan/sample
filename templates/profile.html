@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <meta name="description" content="職業訓練の講義を通して学んだことを活かしながら、自身の紹介、及びこれまで制作してきた作品を展示しています。">
+    <link rel="stylesheet" href="../static/css/pfstyle.css">
+</head>
+<body>
+
+<header>
+
+<!--開閉ブロック-->
+<div id="menubar">
+
+<nav>
+<ul>
+<li><a href="{{url_for('signin')}}#section1">Home</a></li>
+<li><a href="{{url_for('signin')}}#section2">Profile</a></li>
+<li><a href="{{url_for('signin')}}#section3">Gallery</a></li>
+</ul>
+</nav>
+
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+</div>
+<!--/#menubar-->
+
+</header>
+
+<main>
+
+<section id="section4" class="section">
+<p class="sec-title">Profile</p>
+
+<div class="profile1">
+    <h4>経歴</h4>
+    <p>
+        ・ハローワークの紹介による職業訓練<br>
+        ・個人サイトの作成（HTML/CSS） ※<br>
+        ・OBSによる録画の画面構成（CSS） ※<br>
+    </p>
+    <div class="profile-ex">
+        <p>
+            YouTubeにて配信を行うための画面構成を、CSSを用いて作成しました。
+        </p>
+    </div>
+    <p class="comments">
+        ※自己学習の過程で作成
+    </p>
+
+    <div class="obs">
+        <div class="youtube2">
+            <img src="/static/image/youtube.png">
+            <p>配信画面に表示したいココフォリア(※1)の画面</p>
+        </div>
+        <div class="youtube">
+            <img src="/static/image/youtube2.png">
+            <p>ココフォリア、及びDiscord(※2)参加者(※3)を配信画面に表示させたもの</p>
+        </div>
+    </div>
+
+    <p class="comments">
+        ※1&emsp;ココフォリア株式会社が提供するTRPGサポートツール<br>
+        ※2&emsp;アメリカ発のメッセージや音声、ビデオ通話、画面共有などのコミュニケーション機能を備えたサービス<br>
+        ※3&emsp;参加者名はプライバシーの観点から黒塗りにしています。<br>
+    </p>
+</div>
+
+<div class="profile2">
+    <h4>使用した言語・フレームワーク</h4>
+    <p>
+        ・Javascript<br>
+        ・JQuery<br>
+        ・Python<br>
+        ・Flask<br>
+        ・Bootstrap
+    </p>
+    <p class="comments">
+        ※全て現在進行形で学習中
+    </p>
+</div>
+
+<div class="profile3">
+    <h4>趣味や特技</h4>
+    <p>・旅行（国内/国外問わず）</p>
+    <div class="profile-ex">
+        <p>
+            旅行をすることは、心身のリフレッシュを図れるだけでなく、自分に新しい知識や考え方をもたらしてくれるものだと思っているため、
+            仕事にも活かせる何かがあると考えています。<br>
+            例えば、旅行における宿泊先検索・予約サイト/アプリや、観光客向けのサイト/アプリなどを、実際の利用者としての目線から見ることにより、
+            新たな気付きを得ることができるかもしれません。そしてその気付きは今後仕事をしていくうえで、よりよいUI/UXの実現にも活かすことが出来るのでは？と考えています。<br>
+            <br>
+            勿論、旅行による心身のリフレッシュ自体も、仕事のモチベーションの向上に繋がるため、今後も時間の許す限り、この趣味は続けていきたいなと思っています。
+        </p>
+    </div>
+    <p>・もう一つぐらい項目を増やしてもいいかも</p>
+</div>
+
+<div class="profile4">
+    <h4>自己PR</h4>
+    <p>
+        自分は「こういうサイト/アプリを作りたい！」、または既存サイト/アプリに対して「もっとここに特化した機能があったらいいのに…」
+        「この位置にこのコンテンツがあればいいのに…」など、常にユーザーにとって使いやすく、新しい体験が得られるものを考えることが好きです。<br>
+        <br>
+        また、そういった考えを実現するためには知識が必要不可欠だと考えているため、常に必要な知識を習得することにも力を入れています。<br>
+        そうやって取り入れた知識を用いて作成した一つが、このポートフォリオでもあります。<br>
+        このポートフォリオは既存のデザインをお借りしつつ、欲しい機能を追加しつつ、UI/UXについてユーザー目線で考えながら改修を行いました。<br>
+        改善できる点はたくさんあるとは思いますが、レスポンシブ対応を含め、おおよそ考えていた形は実現できたと思います。<br>
+        <br>
+        今はまだ知識も浅く、業務自体は未経験の自分ではありますが、その自分でもこのポートフォリオ作成を通して、たくさんのことを学んできました。<br>
+        常に新しい知識を取り入れながら、新しい挑戦をし続けていく、そんなフロントエンドエンジニアになりたいと思っています。
+    </p>
+</div>
+
+<div class="trpg">
+    <p>
+        Call of Cthulhu is copyright ©1981, 2015, 2019 by Chaosium Inc. ;all rights reserved. Arranged by Arclight Inc.<br>
+        Call of Cthulhu is a registered trademark of Chaosium Inc.<br>
+        PUBLISHED BY KADOKAWA CORPORATION 「クトゥルフ神話TRPG」
+    </p>
+</div>
+
+<div class="flower">
+    <img src="../static/image/flower1.png">
+</div>
+</section>
+
+</main>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Artist Web Site</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--lightbox用jsファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="/static/main.js"></script>
+
+</body>
+</html>

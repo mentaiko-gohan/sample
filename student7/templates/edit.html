@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<main>
+    <form action="/edit/{{dataset.0.iid}}" method="post">
+        <h1 class="sec-title">登録商品の編集</h1>
+        <br>
+        <div class="inputform">
+            <input class="form1" type="text" name="name" placeholder="商品名" required autofocus />
+        </div>
+        <div class="inputform">
+            <input class="form1" type="text" name="description" placeholder="商品説明" required />
+        </div>
+        <input class="fbutton" type="submit" value="編集">
+    </form>
+</main>
+
+    
+</body>
+</html>
