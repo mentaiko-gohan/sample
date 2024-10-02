@@ -16,9 +16,9 @@
 
 <nav>
 <ul>
-<li><a href="{{url_for('signin')}}">Home</a></li>
-<li><a href="{{url_for('signinsec2')}}">Profile</a></li>
-<li><a href="{{url_for('signinsec3')}}">Gallery</a></li>
+<li><a href="home.html#section1">Home</a></li>
+<li><a href="home.html#section2">Profile</a></li>
+<li><a href="home.html#section3">Gallery</a></li>
 </ul>
 </nav>
 
@@ -41,13 +41,46 @@
 
 <div class="list-grid-trimming">
 
-    {% for rec in dataset %}
     <div class="list">
-        <a href="../static/limited/{{rec.wno1}}" data-lightbox="group2" data-title="{{rec.workex}}">
-        <img src="../static/limited/{{rec.wno2}}" alt="">
+        <a href="./limited/1.png" data-lightbox="group1" data-title="CoC『純潔と鉄血』/HO：鉄血">
+        <img src="./limited/1-2.png" alt="">
         </a>
-    </div> 
-    {% endfor %}
+    </div>
+    <div class="list">
+        <a href="./limited/2.png" data-lightbox="group1" data-title="CoC『渡る世間は殺人鬼ばかり』/HO1">
+        <img src="./limited/2-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/3.png" data-lightbox="group1" data-title="CoC『Paranomal Crime』/HO5">
+        <img src="./limited/3-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/4.png" data-lightbox="group1" data-title="CoC『夜明けを求めた者たち』/HO3">
+        <img src="./limited/4-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/5.png" data-lightbox="group1" data-title="CoC『快刀乱魔』/HO風">
+        <img src="./limited/5-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/6.png" data-lightbox="group1" data-title="CoC『快刀乱魔』/HO月">
+        <img src="./limited/6-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/7.png" data-lightbox="group1" data-title="CoC『胡桃炸裂症候群-Drosselmeyer Syndrome-』/HO刑事">
+        <img src="./limited/7-2.png" alt="">
+        </a>
+    </div>
+    <div class="list">
+        <a href="./limited/8.png" data-lightbox="group1" data-title="CoC『MOON GIFTED』/HO1">
+        <img src="./limited/8-2.png" alt="">
+        </a>
+    </div>
 
 </div>
 
